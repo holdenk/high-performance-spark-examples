@@ -62,7 +62,7 @@ function run_example () {
 	       $(cat "${ex}.conf" || echo "") \
 	       --name "${ex}" \
 	       --jars "${EXAMPLE_JAR}" \
-	       "${ex}" 2>&1 | tee -a "${ex}.out" || check_fail "$ex" $?
+	       "${ex}" 2>&1 | tee "${ex}.out" || check_fail "$ex" $?
 }
 
 if [ $# -eq 1 ]; then

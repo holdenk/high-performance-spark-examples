@@ -1,5 +1,3 @@
-# This script triggers a number of different PySpark errors
-
 from pyspark.sql.session import SparkSession
 from pyspark.sql.functions import pandas_udf, udf
 from typing import Iterator
